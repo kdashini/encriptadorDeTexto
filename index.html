@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="Logo" src="imagenes/Logo.png" alt="Logo Alura Latam">
+    </header>
+    <main>
+        <section class="seccion1">
+            <div class="Contenedor-CajaDeTexto">
+                <textarea id="cajaDeTexto" class="cajaDeTexto" placeholder="Ingresa el texto"></textarea>
+            </div>
+            <div class="contenedorBotones-Alerta">
+                <div class="botones">
+                    <input onclick="encriptar();" type="button" value="Encriptar" class="botonEncriptar" id="botonEncriptar">
+                    <input onclick="desencriptar();" type="button" value="Desencriptar" class="botonDesencriptar" id="botonDesencriptar">
+                </div>
+                <div class="alerta">
+                    <img src="imagenes/Group.png" alt="icono de alerta">
+                    <p class="textoAlerta">Solo letras minúsculas y sin acentos</p>
+                </div>
+            </div>
+        </section>
+        <section class="seccion2">
+            <div class="contenedorMunieco" id="contenedorMunieco">
+                <img src="imagenes/Muñeco.png" alt="Muñeco" id="muñeco">
+                <p class="textoEncriptado" id="textoEncriptado"></p>
+            </div>
+            <div class="Parrafos" id="parrafos">
+                <h1>Ningún mensaje fue<br>encontrado</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="contenedor-botonCopiarLimpiar">
+                <input onclick="copiar();" type="button" value="Copiar" class="botonCopiar" id="botonCopiar">
+                <input onclick="limpiar();" type="button" value="Limpiar" class="botonLimpiar" id="botonLimpiar"> <!-- Nuevo botón -->
+            </div>
+            <div class="mostrarResultado">
+                <p class="textoEncriptado"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; copyright 2024- Encriptador de texto- Desarrollado por Juan Mendez  </p>
+    </footer> 
+    <script src="script.js"></script>
+</body>
+
+</html>
